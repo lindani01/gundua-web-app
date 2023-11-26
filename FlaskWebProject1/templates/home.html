@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gundua Learning</title>
+    <style>
+        /* Global styles */
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(45deg, #5A009D, #9D009D);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(103, 58, 183, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 3px solid #673AB7;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Logo */
+        #logo {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-image: url('../static/Images/Logo.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 175px;
+            /* Adjust the width and height as needed */
+            height: 175px;
+        }
+
+        /* Vision, Mission, and Values section */
+        #vision-mission-values {
+            background-color: #9575CD;
+            padding: 20px;
+            background-image: url('../static/Images/BackG_5.jpg');
+            /*color: #000;*/
+            border-top: 3px solid #673AB7;
+            border-bottom: 3px solid #673AB7;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* About section */
+        #about {
+            background-color: #9575CD;
+            padding: 20px;
+            background-image: url('../static/Images/BackG_3.jpg');
+            border: 3px solid #673AB7;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Services section */
+        #services {
+            background-color: #571B97;
+            color: #fff;
+            padding: 20px;
+            background-image: url('../static/Images/');
+            border-top: 3px solid #9575CD;
+            border-bottom: 3px solid #9575CD;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .service-section {
+            margin-bottom: 30px;
+        }
+
+        #services ul,
+        #services p {
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        #services ul li {
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        #services p strong {
+            display: block;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        /* Why Choose Us section */
+        #why-choose-us {
+            background-color: #9575CD;
+            padding: 20px;
+            background-image: url('../static/Images/BackG_3.jpg');
+            color: #fff;
+            border-top: 3px solid #673AB7;
+            border-bottom: 3px solid #673AB7;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Founder section */
+        #founder {
+            background-color: rgba(103, 58, 183, 0.8);
+            color: #fff;
+            padding: 20px;
+            border-top: 3px solid #9575CD;
+            border-bottom: 3px solid #9575CD;
+        }
+
+        #founder img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Leadership Team section */
+        #leadership-team {
+            background-color: #9575CD;
+            padding: 20px;
+            background-image: url('../static/Images/BackG_6.jpg');
+            border-top: 3px solid #673AB7;
+            border-bottom: 3px solid #673AB7;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #leadership-team div {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #leadership-team img {
+            max-width: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Qualifications and Experience section */
+        #qualifications-experience {
+            background-color: rgba(103, 58, 183, 0.8);
+            color: #fff;
+            padding: 20px;
+            border-top: 3px solid #9575CD;
+            border-bottom: 3px solid #9575CD;
+        }
+
+        #qualifications-experience table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #fff;
+        }
+
+        #qualifications-experience th,
+        #qualifications-experience td {
+            border: 1px solid #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Contact section */
+        #contact {
+            background-color: #9575CD;
+            padding: 20px;
+            background-image: url('../static/Images/BackG_3.jpg');
+            border-top: 3px solid #673AB7;
+            border-bottom: 3px solid #673AB7;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(103, 58, 183, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Dropdown style*/
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            
+        }
+
+        a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style the dropdown */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        /* Display the dropdown on hover */
+        li:hover .dropdown {
+            display: block;
+        }
+
+        .navbarplacement{
+            margin-left: 580px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <h1>Welcome to Gundua Learning</h1>
+        <nav class="navbarplacement">
+            <ul>
+                <li>
+                    <a href="#" class="dropbtn">About Us</a>
+                    <div class="dropdown">
+                        <a href="#vision-mission-values">Vision, Mission, Values</a>
+                        <a href="#founder">Meet the Founder</a>
+                        <a href="#leadership-team">Leadership Team</a>
+                    </div>
+                </li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#qualifications-experience">Qualifications and Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="vision-mission-values">
+        <h2>Our Vision</h2>
+        <p>Offering the best education and learning solutions for the realization of highly skilled and capable students
+            who make a lasting impact in their communities and the world.</p>
+        <h2>Our Mission</h2>
+        <p>To advance knowledge through the development of specialized education institutions in general, vocational,
+            and higher education sectors.</p>
+        <h2>Values</h2>
+        <ul>
+            <li>Innovation</li>
+            <li>Accountability</li>
+            <li>Integrity</li>
+            <li>Learning to Realization</li>
+            <li>Evidence-driven discovery</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a strategy, research, and learning solutions company with development interests in General,
+            Vocational, and Higher Education sectors.</p>
+    </section>
+
+    <section id="services">
+        <div class="service-section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Business Strategy</li>
+                <li>Research (end-to-end)</li>
+                <li>Performance Monitoring and Evaluation</li>
+                <li>Performance Information Quality Assurance</li>
+                <li>Feasibility Studies</li>
+                <li>Training Needs Analysis</li>
+                <li>Learning Needs Analysis</li>
+                <li>Skills Audits</li>
+                <li>Establishment of Centers of Excellence</li>
+                <li>Curriculum Design and Development</li>
+                <li>Application of Learning Evaluation studies</li>
+                <li>Establishment of Centers of Excellence</li>
+            </ul>
+        </div>
+        <div class="service-section">
+            <h2>Pledge</h2>
+            <ul>
+                <li>To serve clients with integrity & openness</li>
+                <li>Execute with excellence</li>
+                <li>Deliver high impact and sustainable solutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>High levels of professionalism and ethical conduct</li>
+            <li>Highly skilled project teams and specialists</li>
+            <li>Client service orientation</li>
+            <li>Experience and multidisciplinary expertise</li>
+        </ul>
+    </section>
+
+    <section id="founder">
+        <h2>Meet the Founder & Chief Executive</h2>
+        <img src="../static/Images/Founder.jpeg" alt="Mthokozisi Mbambo">
+        <h3>About Me</h3>
+        <p>I have over 16+ years of experience working in various sectors in the public sector. These range from working
+            as a researcher for both the Council for Scientific and Industrial research (CSIR) and the Human Sciences
+            Research Council (HRSC), extending to working in professional development space (The NSG), and being
+            responsible for governance and strategy function at (S.A Human Rights Commission). Worked in strategy,
+            policy monitoring and evaluation for (CoGTA-National) and City of Ekurhuleni in the local government sector.
+            Recently (2022-2023) was contracted as an independent consultant for UNDP-South-Africa.</p>
+        <h3>Education</h3>
+        <p>CIMA Advanced Diploma in Management Accounting;</p>
+        <p>Exec Cert: Business Strategy and Financial Performance;</p>
+        <p>MBA- Strategic Planning</p>
+        <h3>My Motto</h3>
+        <p>It is education that enables man to harness nature and utilize her resources for the well-being and
+            improvement of his life.</p>
+    </section>
+
+    <section id="leadership-team">
+        <h2>Leadership Team</h2>
+        <div>
+            <img src="../static/Images/Image_1.jpg" alt="Mthokozisi Mbambo">
+            <p>Mthokozisi Mbambo<br>Chief Executive</p>
+        </div>
+        <div>
+            <img src="../static/Images/Image_1.jpg" alt="Dr Landiwe Khuzwayo">
+            <p>Dr Landiwe Khuzwayo<br>Chief Specialist</p>
+        </div>
+        <div>
+            <img src="../static/Images/Image_1.jpg" alt="Boitumelo Letsoko">
+            <p>Boitumelo Letsoko<br>Chief Operations Officer</p>
+        </div>
+        <div>
+            <img src="../static/Images/Image_1.jpg" alt="Nkanyiso Mncwango">
+            <p>Nkanyiso Mncwango<br>Senior Associate</p>
+        </div>
+        <div>
+            <img src="../static/Images/Image_1.jpg" alt="Dr Sipho Buthelezi">
+            <p>Dr Sipho Buthelezi<br>Head of Research</p>
+        </div>
+        <div>
+            <img src="../static/Images/Image_1.jpg" alt="Sithuli Zulu">
+            <p>Sithuli Zulu<br>Project Manager</p>
+        </div>
+    </section>
+
+    <section id="qualifications-experience">
+        <h2>Qualifications and Experience</h2>
+        <table>
+            <tr>
+                <th>TEAM MEMBER</th>
+                <th>Qualifications</th>
+                <th>Yrs. X</th>
+            </tr>
+            <tr>
+                <td>Mthokozisi Mbambo</td>
+                <td>
+                    <p>CIMA Advanced Diploma in Management Accounting</p>
+                    <p>Business Strategy and Financial Performance (Exec Edu)</p>
+                    <p>MBA in Strategic Planning</p>
+                </td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Boitumelo Letsoko</td>
+                <td>
+                    <p>Strategic Leadership and Management Specialization</p>
+                    <p>Advanced Project Management Diploma</p>
+                    <p>BCom in Banking and Economics</p>
+                </td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Dr Sipho Buthelezi</td>
+                <td>
+                    <p>PhD in Public Policy</p>
+                    <p>MSocSci. in Policy & Development studies</p>
+                    <p>BSocSci. (Hons) In Policy & Development studies</p>
+                </td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Dr Landiwe Khuzwayo</td>
+                <td>
+                    <p>PhD in Public Health</p>
+                    <p>Masters in Public Health (Epidemiology)</p>
+                    <p>BSc in Chemistry</p>
+                </td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Nkanyiso Mncwango</td>
+                <td>
+                    <p>MCom in Leadership Studies</p>
+                    <p>Postgraduate Diploma in Entrepreneurship</p>
+                    <p>BSc in Biomedical sciences</p>
+                </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Sithuli Zulu</td>
+                <td>
+                    <p>Masters in Business Administration</p>
+                    <p>Certified Project Management Professional (PMP)</p>
+                    <p>Master of Engineering Project Management</p>
+                </td>
+                <td>19</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <address>
+            <p>64 Drakensberg Blvd. Germiston, 1434</p>
+            <p>Phone: (+27)84-237-2412</p>
+            <p>Email: mcmbambo@gmail.com</p>
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Gundua Learning</p>
+    </footer>
+</body>
+
+</html>
